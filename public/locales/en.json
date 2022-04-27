@@ -1,0 +1,23 @@
+{
+  "title": "My website",
+  "subtitle": "Web-developer, teaching people frontend development, working on projects that are interesting for me",
+  "place": "Currently based in Tbilisi, Georgia \uD83C\uDDEC\uD83C\uDDEA",
+  "contactTitle": "Contact me",
+  "telegram": "Telegram",
+  "instagram": "Instagram",
+  "linksTitle": "Some links",
+  "switchLocaleId": "ru-RU",
+  "switchLocaleText": "Russian version",
+  "demonstrationTitle": "What can I do?",
+  "nextJs": "This site is made with NextJS (it's over engineering, I know) and loaded in your browser in",
+  "milliseconds": "milliseconds",
+  "chartTitle": "Here is graph made with D3 (also dynamically loaded) showing how my age depends on current year",
+  "vueTitle": "This spoiler is made with VueJS (loaded dynamically within React)",
+  "educationTitle": "Education info ↓",
+  "educationInfo": "No bachelor's degree. Summary: high school and learning in School21 (42 Ecole campus in Moscow). But this does not prevent me to work as part-time mentor of Frontend Development course at hexlet.io.",
+  "localisationTitle": "Localisation made with i18n module embedded into NextJS",
+  "moreText": "Site will be updated with more features if I will have more time",
+  "vpnGuide": "Mini-guide about VPN Services (RU)",
+  "stickersNow": "Stickers Now (RU: marketplace for selling digital artwork as physical goods)",
+  "switchTheme": "Switch theme"
+}
