@@ -26,7 +26,7 @@ const VueDropdown: React.FC<VueDropdownProps> = (props) => {
   }, [isVueLoaded, texts]);
 
   return <>
-    <Script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" onLoad={() => setIsVueLoaded(true)} />
+    <Script strategy="afterInteractive" src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js" onLoad={() => setIsVueLoaded(true)} />
     <div id="vueDropdown" />
   </>
 }
