@@ -19,6 +19,17 @@ function MyApp({Component, pageProps}) {
 
   return <>
     <Script id="dark-mode-script" strategy="beforeInteractive" src="/darkModeScript.js"/>
+    <Script src="https://www.googletagmanager.com/gtag/js?id=G-2RJMB0CKY5" strategy="afterInteractive" />
+    <Script id="google-analytics" strategy="afterInteractive">
+      {
+        `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2RJMB0CKY5');
+        `
+      }
+    </Script>
     <ThemeContext.Provider value={{ isDarkMode, setDarkMode, changeThemeProperties}}>
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
