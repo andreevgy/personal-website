@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { color } from "styled-system";
+import {color, ColorProps} from "styled-system";
 
-const Layout = styled.article(color);
+const Layout = styled.article<ColorProps>(color);
 
 export default Layout;

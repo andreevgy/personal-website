@@ -1,4 +1,5 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
+import Script from "next/script";
 
 interface VueDropdownProps {
   texts: { [s: string]: string };
@@ -6,25 +7,16 @@ interface VueDropdownProps {
 
 const VueDropdown: React.FC<VueDropdownProps> = (props) => {
   const { texts } = props;
-  const vueModule = useRef(null);
   const [isVueLoaded, setIsVueLoaded] = useState(false);
 
   useEffect(() => {
-    import('vue')
-      .then(vue => {
-        vueModule.current = vue;
-        setIsVueLoaded(true);
-      })
-  }, []);
-
-  useEffect(() => {
     if (isVueLoaded) {
-      const vue = vueModule.current;
+      const vue = window.Vue;
       const app = vue.createApp({
         data() { return { isOpen: false } },
         render() {
           return vue.h('div', [
-            vue.h('h5', {onClick: () => this.isOpen = !this.isOpen}, texts.educationTitle),
+            vue.h('h5', {onClick: () => this.isOpen = !this.isOpen, style: 'cursor:pointer'}, texts.educationTitle),
             this.isOpen ? vue.h('p', texts.educationInfo) : null,
           ]);
         }
@@ -33,7 +25,10 @@ const VueDropdown: React.FC<VueDropdownProps> = (props) => {
     }
   }, [isVueLoaded, texts]);
 
-  return <div id="vueDropdown" />
+  return <>
+    <Script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" onLoad={() => setIsVueLoaded(true)} />
+    <div id="vueDropdown" />
+  </>
 }
 
 export default VueDropdown;

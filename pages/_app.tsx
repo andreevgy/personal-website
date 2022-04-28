@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styles/globals.css'
 import Script from "next/script";
 import {ThemeProvider, createGlobalStyle} from "styled-components";
