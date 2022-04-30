@@ -1,9 +1,11 @@
 import { AppTheme } from './themeType';
+import defaultTheme from "./defaultTheme";
 
 const lightTheme: AppTheme = {
+  ...defaultTheme,
   colors: {
     background: '#FFFFFF',
-    text: '#000000'
+    text: 'rgb(55, 53, 47)'
   },
 }
 

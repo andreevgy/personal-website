@@ -1,5 +1,5 @@
 {
-  "title": "My website",
+  "title": "Gleb Andreev",
   "subtitle": "Web-developer, teaching people frontend development, working on projects that are interesting for me",
   "place": "Currently based in Tbilisi, Georgia \uD83C\uDDEC\uD83C\uDDEA",
   "contactTitle": "Contact me",
@@ -8,16 +8,64 @@
   "linksTitle": "Some links",
   "switchLocaleId": "ru-RU",
   "switchLocaleText": "Russian version",
-  "demonstrationTitle": "What can I do?",
-  "nextJs": "This site is made with NextJS (it's over engineering, I know) and loaded in your browser in",
+  "techStuff": "Tech I work with",
+  "nextJs": "It's over engineering for this small site, it loaded in your browser in",
   "milliseconds": "milliseconds",
-  "chartTitle": "Here is graph made with D3 (loaded dynamically from hosting) showing how my age depends on current year",
-  "vueTitle": "This spoiler is made with VueJS (loaded dynamically from UNPKG)",
-  "educationTitle": "Education info ↓",
-  "educationInfo": "No bachelor's degree. Summary: high school and learning in School21 (42 Ecole campus in Moscow). But this does not prevent me to work as part-time mentor of Frontend Development course at hexlet.io.",
-  "localisationTitle": "Localisation made with i18n module embedded into NextJS",
+  "vueJs": "Spoilers hiding info about work are made with VueJS (and embedded into React)",
+  "styledSystem": "Over engineering again, but I will make cool feature out of it soon",
+  "chartTitle": "Here is a chart showing how my age depends on year",
+  "localisationTitle": "embedded into NextJS",
   "moreText": "Site will be updated with more features if I will have more time",
   "vpnGuide": "Mini-guide about VPN Services (RU)",
-  "stickersNow": "Stickers Now (RU: marketplace for selling digital artwork as physical goods)",
-  "switchTheme": "Switch theme"
+  "github": "GitHub (this website)",
+  "stickersNow": "Stickers Now (RU)",
+  "switchTheme": "Switch theme",
+  "workExperienceTitle": "Work experience",
+  "clickable": "Click on job's title to see more info",
+  "workExperience": [
+    {
+      "title": "Senior FullStack Developer",
+      "company": "protranslating.com",
+      "companyLink": "https://protranslating.com",
+      "duration": "June 2021 - current",
+      "responsibilities": [
+        "Working on internal system for managing requests from clients, translating and billing inside of company",
+        "Building new APIs and integrations with external services (such as login with external SSO Provider, or using Google Vision text recognition API to automate translations)",
+        "Mentoring new members of the team"
+      ]
+    },
+    {
+      "title": "Mentor",
+      "company": "Hexlet",
+      "companyLink": "https://hexlet.io",
+      "duration": "September 2021 - current",
+      "responsibilities": [
+        "Mentor of Frontend course at online software development school",
+        "Helping people learn modern web development, starting with HTML, CSS, JS and ending with React + Redux application",
+        "Participate in short 2-week JS starter courses alongside with long 10 months full education course"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Sber",
+      "companyLink": "https://sberbank.ru",
+      "duration": "April 2019 - May 2021",
+      "responsibilities": [
+        "Worked on HR-analytics products containing many data-heavy charts",
+        "Managed work in team of several developers",
+        "Contributed to company-wide components library"
+      ]
+    },
+    {
+      "title": "FullStack",
+      "company": "Freelance/Pet-projects",
+      "companyLink": "https://andreev.gy",
+      "duration": "2016 - current",
+      "responsibilities": [
+        "Launched ecommerce site to sell artworks which is now serving hundreds of artists and thousands of artworks",
+        "Created video-game statistics site that was used in various social media publications",
+        "Built several chat-bots"
+      ]
+    }
+  ]
 }

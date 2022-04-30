@@ -1,17 +1,33 @@
 import React, {useState} from 'react';
-import '../styles/globals.css'
+// import '../styles/globals.css'
 import Script from "next/script";
 import {ThemeProvider, createGlobalStyle} from "styled-components";
 import {AppTheme, ThemeContext, useThemeManager} from "../theme";
 import { VueContext } from "../utils/vueContext";
 
 const GlobalStyle = createGlobalStyle<{ theme: AppTheme }>`
+  html,
   body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 900px;
     background: ${props => props.theme.colors.background};
     font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
   a,a.visited {
     color: ${props => props.theme.colors.text};
+  }
+  html {
+    -webkit-print-color-adjust: exact;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
   }
 `;
 
@@ -21,7 +37,7 @@ function MyApp({Component, pageProps}) {
 
   return <>
     <Script id="dark-mode-script" strategy="beforeInteractive" src="/darkModeScript.js"/>
-    <Script src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js" strategy="afterInteractive" onLoad={() => setIsVueLoaded(true)} />
+    <Script src="https://unpkg.com/vue@3.2.33/dist/vue.global.js" strategy="afterInteractive" onLoad={() => setIsVueLoaded(true)} />
     <Script src="https://www.googletagmanager.com/gtag/js?id=G-2RJMB0CKY5" strategy="afterInteractive" />
     <Script id="google-analytics" strategy="afterInteractive">
       {

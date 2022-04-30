@@ -1,4 +1,6 @@
 import {useEffect, useRef} from "react";
+import {useTheme} from "styled-components";
+import {AppTheme} from "../../theme";
 
 function generateData() {
   const currentDate = new Date();
@@ -66,13 +68,14 @@ const drawChart = (chartRef, data) => {
 
 const D3Chart = () => {
   const chartRef = useRef(null);
+  const theme = useTheme();
 
   useEffect(() => {
     const data = generateData();
     drawChart(chartRef, data);
   }, []);
 
-  return <div style={{width: '100%', overflowX: 'auto'}}>
+  return <div style={{width: '100%', overflowX: 'auto', color: (theme as AppTheme).colors.text }}>
     <svg ref={chartRef}/>
   </div>
 }

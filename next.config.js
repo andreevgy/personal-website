@@ -7,11 +7,14 @@ const { withSentryConfig } = require('@sentry/nextjs');
 
 const moduleExports = {
   reactStrictMode: true,
+  compiler: {
+    styledComponents: true,
+  },
   i18n: {
     locales: ['en-US', 'ru-RU'],
     defaultLocale: 'en-US',
     localeDetection: true,
-  }
+  },
 };
 
 const sentryWebpackPluginOptions = {
