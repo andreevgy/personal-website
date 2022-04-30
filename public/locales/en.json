@@ -1,5 +1,6 @@
 {
-  "title": "Gleb Andreev",
+  "name": "Gleb",
+  "surname": "Andreev",
   "subtitle": "Web-developer, teaching people frontend development, working on projects that are interesting for me",
   "place": "Currently based in Tbilisi, Georgia \uD83C\uDDEC\uD83C\uDDEA",
   "contactTitle": "Contact me",
@@ -22,6 +23,7 @@
   "switchTheme": "Switch theme",
   "workExperienceTitle": "Work experience",
   "clickable": "Click on job's title to see more info",
+  "metaText": "Personal website of web-developer Gleb Andreev",
   "workExperience": [
     {
       "title": "Senior FullStack Developer",

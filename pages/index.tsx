@@ -17,9 +17,18 @@ export default function Home() {
   return (
     <Box backgroundColor="background">
       <Head>
-        <title>{texts.title}</title>
+        <title>{texts.name} {texts.surname}</title>
+        <meta name="description" content={texts.metaText} />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:title" content={`${texts.name} ${texts.surname}`} />
+        <meta property="og:type" content="profile" />
+        <meta property="profile:first_name" content={texts.name} />
+        <meta property="profile:last_name" content={texts.surname} />
+        <meta property="profile:username" content="andreevgy" />
+        <meta property="profile:gender" content="male" />
       </Head>
-      <Text variant="h1" mb={2}>{texts.title}</Text>
+      <Text variant="h1" mb={2}>{texts.name} {texts.surname}</Text>
       <Box display="flex" flexDirection="row" mb={4}>
         <Link href="/" mr={2} locale={texts.switchLocaleId}>{texts.switchLocaleText}</Link>
         <Text variant="link" onClick={() => setDarkMode(!isDarkMode)}>Switch theme</Text>
