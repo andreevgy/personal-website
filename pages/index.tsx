@@ -3,7 +3,7 @@ import enLocale from '../public/locales/en.json';
 import ruLocale from '../public/locales/ru.json';
 import {useEffect, useState} from "react";
 import D3Chart from "../components/D3Chart";
-import VueDropdown from "../components/VueDropdown";
+import VueDropdown from "../components/VueSpoiler";
 import Layout from "../components/Layout";
 import {useThemeContext} from "../theme";
 
@@ -35,7 +35,7 @@ export default function Home(props) {
   }, []);
 
   return (
-    <Layout backgroundColor="background" color="text">
+    <Layout backgroundColor="background">
       <header><h1 className="page-title">{texts.title}</h1></header>
       <small>
         <Link href="/" locale={texts.switchLocaleId}>{texts.switchLocaleText}</Link>
@@ -68,7 +68,7 @@ export default function Home(props) {
         <h4>{texts.demonstrationTitle}</h4>
         <p className="">{texts.nextJs} {Math.round(state)} {texts.milliseconds}</p>
         <h4 className="">{texts.vueTitle}</h4>
-        <VueDropdown texts={texts}/>
+        <VueDropdown spoilerTitle={texts.educationTitle} spoilerText={texts.educationInfo}/>
         <h4>{texts.chartTitle}</h4>
         <D3Chart/>
         <br/>
