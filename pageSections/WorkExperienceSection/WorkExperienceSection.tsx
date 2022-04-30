@@ -15,11 +15,11 @@ const VueAppConfig = {
     return {isOpen: false}
   },
   props: {
-    title: String,
-    duration: String,
-    company: String,
-    companyLink: String,
-    responsibilities: String,
+    title: Object,
+    duration: Object,
+    company: Object,
+    companyLink: Object,
+    responsibilities: Object,
     theme: Object,
   },
   template: `
