@@ -35,7 +35,7 @@ export default function Home(props) {
   }, []);
 
   return (
-    <Layout backgroundColor="background">
+    <Layout backgroundColor="background" color="text">
       <header><h1 className="page-title">{texts.title}</h1></header>
       <small>
         <Link href="/" locale={texts.switchLocaleId}>{texts.switchLocaleText}</Link>

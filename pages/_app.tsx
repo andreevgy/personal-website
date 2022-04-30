@@ -35,7 +35,7 @@ function MyApp({Component, pageProps}) {
     </Script>
     <VueContext.Provider value={isVueLoaded}>
       <ThemeContext.Provider value={{ isDarkMode, setDarkMode, changeThemeProperties}}>
-        <ThemeProvider theme={theme as AppTheme}>
+        <ThemeProvider theme={theme}>
           <GlobalStyle/>
           <Component {...pageProps} />
         </ThemeProvider>
