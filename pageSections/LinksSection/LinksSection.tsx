@@ -13,8 +13,9 @@ const LinksSection = () => {
       <Text mb={2}>{texts.telegram}: <Text as="a"
                                            href="https://t.me/andreevgy">@andreevgy</Text>
       </Text>
-      <Text>{texts.instagram}: <Text as="a"
+      <Text mb={2}>{texts.instagram}: <Text as="a"
                                      href="https://www.instagram.com/andreevgy/">@andreevgy</Text></Text>
+      <Text>Email: <Text as="a" href="mailto:me@andreev.gy">me@andreev.gy</Text></Text>
     </Box>
     <Box width={["100%", "50%"]} display="flex" flexDirection="column">
       <Text variant="h4" mb={2}>{texts.linksTitle}</Text>
