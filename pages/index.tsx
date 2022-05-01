@@ -1,5 +1,4 @@
 import Head from "next/head";
-import {useEffect, useState} from "react";
 import D3Chart from "../components/D3Chart";
 import Box from "../components/Box";
 import Text from "../components/Text";
