@@ -13,5 +13,5 @@ if (localStorage && localStorage.getItem && localStorage.setItem) {
 
 // Set proper colors as css properties
 let root = document.documentElement;
-root.style.setProperty('--background-color', window.isDarkMode ? '#000000' : '#FFFFFF');
-root.style.setProperty('--text-color', window.isDarkMode ? '#FFFFFF' : '#000000');
+root.style.setProperty('--background-color', window.isDarkMode ? '#191919' : '#FFFFFF');
+root.style.setProperty('--text-color', window.isDarkMode ? 'rgba(255, 255, 255, 0.81)' : 'rgb(55, 53, 47)');

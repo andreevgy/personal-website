@@ -3,17 +3,14 @@ import {useEffect, useMemo, useState} from "react";
 
 const useThemeManager = () => {
   const { isDarkMode, changeDarkMode } = useDarkMode();
-  const [theme, setTheme] = useState(isDarkMode ? darkTheme : lightTheme);
   const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setTheme(isDarkMode ? darkTheme : lightTheme);
+  const theme = useMemo(() => {
+    return isDarkMode ? darkTheme : lightTheme;
   }, [isDarkMode]);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsMounted(true);
-    }, 0);
+    setIsMounted(true);
   }, []);
 
   const editedTheme = useMemo(() => {
@@ -21,7 +18,7 @@ const useThemeManager = () => {
     return { ...theme, colors: { ...theme.colors, background: 'var(--background-color)', text: 'var(--text-color)' } };
   }, [theme, isMounted]);
 
-  return { theme: editedTheme, changeThemeProperties: setTheme, setDarkMode: changeDarkMode, isDarkMode }
+  return { theme: editedTheme, changeThemeProperties: () => {}, setDarkMode: changeDarkMode, isDarkMode }
 }
 
 export default useThemeManager;
