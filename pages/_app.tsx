@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Script from "next/script";
 import {ThemeProvider, createGlobalStyle} from "styled-components";
 import {AppTheme, ThemeContext, useThemeManager} from "../theme";
@@ -39,11 +39,12 @@ function MyApp({Component, pageProps}) {
   const [isVueLoaded, setIsVueLoaded] = useState(false);
 
   return <>
-    <DarkModeScript />
+    <DarkModeScript/>
     <Script src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js" strategy="afterInteractive"
             onLoad={() => setIsVueLoaded(true)}/>
-    <Script src="https://www.googletagmanager.com/gtag/js?id=G-2RJMB0CKY5" strategy="afterInteractive"/>
-    <Script id="google-analytics" strategy="afterInteractive">
+    {process.env.NODE_ENV === "production" &&
+		<Script src="https://www.googletagmanager.com/gtag/js?id=G-2RJMB0CKY5" strategy="afterInteractive"/>}
+    {process.env.NODE_ENV === "production" && <Script id="google-analytics" strategy="afterInteractive">
       {
         `
           window.dataLayer = window.dataLayer || [];
@@ -52,7 +53,8 @@ function MyApp({Component, pageProps}) {
           gtag('config', 'G-2RJMB0CKY5');
         `
       }
-    </Script>
+		</Script>
+    }
     <VueContext.Provider value={isVueLoaded}>
       <ThemeContext.Provider value={{isDarkMode, setDarkMode, changeThemeProperties}}>
         <ThemeProvider theme={theme}>
