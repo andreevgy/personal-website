@@ -6,7 +6,9 @@ function generateData() {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   const startYear = 2000;
-  const data = new Array((currentYear - startYear))
+  const thisYearBirthday = new Date(currentYear, 6, 19)
+  const addOne = thisYearBirthday.getTime() < currentDate.getTime();
+  const data = new Array((currentYear - startYear + (addOne ? 1 : 0)))
     .fill(0)
     .map((d, i) => ({date: new Date(startYear + i, 6, 19), age: i}));
 

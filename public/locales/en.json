@@ -8,7 +8,7 @@
   "instagram": "Instagram",
   "linksTitle": "Some links",
   "switchLocaleId": "ru-RU",
-  "switchLocaleText": "Russian version",
+  "switchLocaleText": "Версия на русском \uD83C\uDDF7\uD83C\uDDFA ",
   "techStuff": "Tech I work with",
   "nextJs": "It's over engineering for this small site, it loaded in your browser in",
   "milliseconds": "milliseconds",
@@ -26,14 +26,14 @@
   "metaText": "Personal website of web-developer Gleb Andreev",
   "workExperience": [
     {
-      "title": "Senior FullStack Developer",
-      "company": "protranslating.com",
-      "companyLink": "https://protranslating.com",
-      "duration": "June 2021 - current",
+      "title": "Senior Frontend Developer",
+      "company": "Werkspot (part of Instapro Group)",
+      "companyLink": "https://www.werkspot.nl",
+      "duration": "July 2022 - current",
       "responsibilities": [
-        "Working on internal system for managing requests from clients, translating and billing inside of company",
-        "Building new APIs and integrations with external services (such as login with external SSO Provider, or using Google Vision text recognition API to automate translations)",
-        "Mentoring new members of the team"
+        "Part of shortlisting team working on main communication point between homeowner and tradesperson",
+        "Migrating pages from old PHP stack to NextJS/TS/GraphQL stack with some adjustments for webview in mobile app",
+        "Developing new features or changing already existing ones using A/B tests"
       ]
     },
     {
@@ -45,6 +45,17 @@
         "Mentor of Frontend course at online software development school",
         "Helping people learn modern web development, starting with HTML, CSS, JS and ending with React + Redux application",
         "Participate in short 2-week JS starter courses alongside with long 10 months full education course"
+      ]
+    },
+    {
+      "title": "Senior FullStack Developer",
+      "company": "protranslating.com",
+      "companyLink": "https://protranslating.com",
+      "duration": "June 2021 - July 2022",
+      "responsibilities": [
+        "Working on internal system for managing requests from clients, translating and billing inside of company",
+        "Building new APIs and integrations with external services (such as login with external SSO Provider, or using Google Vision text recognition API to automate translations)",
+        "Mentoring new members of the team"
       ]
     },
     {
