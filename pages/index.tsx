@@ -29,7 +29,7 @@ export default function Home() {
         <meta property="profile:gender" content="male" />
       </Head>
       <Text variant="h1" mb={2}>{texts.name} {texts.surname}</Text>
-      <Box display="flex" flexDirection="row" mb={4}>
+      <Box display="flex" flexDirection="row" alignItems="center" mb={4}>
         <Link href="/" mr={2} locale={texts.switchLocaleId}>{texts.switchLocaleText}</Link>
         <Text variant="link" onClick={() => setDarkMode(!isDarkMode)}>Switch theme</Text>
       </Box>

@@ -23,8 +23,8 @@ const VueAppConfig = {
     theme: Object,
   },
   template: `
-    <div :style="{ marginBottom: theme.value.space[3] + 'px', cursor: 'pointer', color: theme.value.colors.text }" @click="() => this.isOpen = !this.isOpen">
-        <div :style="{ fontSize: theme.value.fontSizes[2] + 'px', fontWeight: 800 }">{{ title.value }}</div>
+    <div :style="{ marginBottom: theme.value.space[3] + 'px', color: theme.value.colors.text }">
+        <div :style="{ fontSize: theme.value.fontSizes[2] + 'px', cursor: 'pointer', fontWeight: 800 }" @click="() => this.isOpen = !this.isOpen">{{ title.value }}</div>
         <div :style="{ fontSize: theme.value.fontSizes[0] + 'px', marginBottom: theme.value.space[1] + 'px' }">{{ duration.value }}: <a :style="{ fontSize: theme.value.fontSizes[1] + 'px' }" :href="companyLink.value"><i>{{ company.value }}</i></a></div>
         <ul v-if="isOpen">
             <li v-for="item in responsibilities.value" :key="item">
