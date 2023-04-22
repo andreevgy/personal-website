@@ -1,4 +1,4 @@
-## Small website about me using some cool tech
+## Small website about me
 
 Everything as usual
 

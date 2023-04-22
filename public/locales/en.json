@@ -24,6 +24,7 @@
   "workExperienceTitle": "Work experience",
   "clickable": "Click on job's title to see more info",
   "metaText": "Personal website of web-developer Gleb Andreev",
+  "vpnLink": "Outline-based VPN service (RU)",
   "workExperience": [
     {
       "title": "Senior Frontend Developer",
@@ -40,11 +41,11 @@
       "title": "Mentor",
       "company": "Hexlet",
       "companyLink": "https://hexlet.io",
-      "duration": "September 2021 - current",
+      "duration": "September 2021 - April 2023",
       "responsibilities": [
         "Mentor of Frontend course at online software development school",
-        "Helping people learn modern web development, starting with HTML, CSS, JS and ending with React + Redux application",
-        "Participate in short 2-week JS starter courses alongside with long 10 months full education course"
+        "Helped people learn modern web development, starting with HTML, CSS, JS and ending with React + Redux application",
+        "Participated in short 2-week JS starter courses alongside with 10 months full education courses"
       ]
     },
     {
