@@ -19,12 +19,12 @@
   "moreText": "Сайт будет дополняться новыми фичами, если у меня будет время",
   "nextJSLink": "Вводный обзор NextJS",
   "github": "GitHub (этот сайт)",
-  "stickersNow": "Stickers Now",
+  "stickersNow": "Stickers Now [закрыт]",
   "switchTheme": "Переключить тему",
   "workExperienceTitle": "Опыт работы",
   "clickable": "Подробности по клику на название вакансии",
   "metaText": "Личный сайт веб-разработчика Глеба Андреева",
-  "vpnLink": "VPN сервис на базе Outline",
+  "vpnLink": "VPN сервис на базе Outline и Xray",
   "workExperience": [
     {
       "title": "Senior Frontend Разработчик",

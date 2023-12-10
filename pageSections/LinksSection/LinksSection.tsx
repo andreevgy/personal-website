@@ -21,9 +21,6 @@ const LinksSection = () => {
       <Text variant="h4" mb={2}>{texts.linksTitle}</Text>
       <Text mb={2} as="a" href="https://github.com/andreevgy/personal-website">{texts.github}</Text>
       <Text mb={2} as="a" href="https://vpn.andreev.gy">{texts.vpnLink}</Text>
-      <Text mb={2} as="a"
-            href="https://ru.hexlet.io/blog/posts/next-js-chto-eto-takoe-i-kak-ego-ispolzovat">{texts.nextJSLink}
-      </Text>
       <Text mb={2} as="a" href="https://stickersnow.ru">{texts.stickersNow}</Text>
     </Box>
   </Box>

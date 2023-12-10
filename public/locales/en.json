@@ -17,14 +17,13 @@
   "chartTitle": "Here is a chart showing how my age depends on year",
   "localisationTitle": "embedded into NextJS",
   "moreText": "Site will be updated with more features if I will have more time",
-  "nextJSLink": "NextJS introduction guide (RU)",
   "github": "GitHub (this website)",
-  "stickersNow": "Stickers Now (RU)",
+  "stickersNow": "Stickers Now [сlosed]",
   "switchTheme": "Switch theme",
   "workExperienceTitle": "Work experience",
   "clickable": "Click on job's title to see more info",
   "metaText": "Personal website of web-developer Gleb Andreev",
-  "vpnLink": "Outline-based VPN service (RU)",
+  "vpnLink": "VPN service using Outline and Xray (RU)",
   "workExperience": [
     {
       "title": "Senior Frontend Developer",
