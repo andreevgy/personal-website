@@ -28,9 +28,21 @@
   "workExperience": [
     {
       "title": "Senior Frontend Разработчик",
-      "company": "Werkspot (часть Instapro Group)",
-      "companyLink": "https://www.werkspot.nl",
-      "duration": "Июль 2022 - сейчас",
+      "company": "Instapro Group - UI-Platform team",
+      "companyLink": "https://linkedin.com/company/instapro-group",
+      "duration": "Сентябрь 2024 - сейчас",
+      "responsibilities": [
+        "Часть команды UI-platform, которая работает над дизайн-системой и фичами охватывающими весь проект",
+        "Контибьчу в дизайн-систему, разрабатываю автоматизации и интеграции с Figma, используя их API",
+        "Работаю над глобальными фичами вроде оффлайн-режима используя Service Workers и улучшаю UX используя весь спектр возможностей Apollo GraphQL",
+        "Коммуницирую и провожу воркшопы с другими командами по поводу важности и использования дизайн-системы во внутренних проектах"
+      ]
+    },
+    {
+      "title": "Senior Frontend Разработчик",
+      "company": "Instapro Group - Shortlisting team",
+      "companyLink": "https://linkedin.com/company/instapro-group",
+      "duration": "Июль 2022 - Сентябрь 2024",
       "responsibilities": [
         "Часть команды Shortlisting, главной точки общения заказчика и исполнителя на платформе",
         "Мигрирую платформу со старого PHP стэка на новый NextJS/TS/GraphQL с оглядкой на webview в мобильном приложении",
